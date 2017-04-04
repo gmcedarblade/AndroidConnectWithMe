@@ -10,59 +10,45 @@
         android:id="@+id/firstNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="First Name"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:text="First Name" />
 
     <TextView
         android:id="@+id/lastNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Last Name"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="41dp" />
+        android:text="Last Name" />
 
     <TextView
         android:id="@+id/emailTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="70dp" />
+        android:text="Email" />
 
     <EditText
         android:id="@+id/emailEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="70dp" />
+        android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/firstNameEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/lastNameEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="33dp" />
+        android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/connectButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CONNECT!"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="170dp" />
+        android:text="CONNECT!" />
 
 </android.support.constraint.ConstraintLayout>
