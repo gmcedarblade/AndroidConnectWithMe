@@ -8,42 +8,55 @@
         android:id="@+id/firstNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="First Name" />
+        android:text="@string/first_name"
+        android:labelFor="@+id/firstNameEditText"/>
 
     <EditText
         android:id="@+id/firstNameEditText"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:layout_toEndOf="@+id/firstNameTextView"/>
 
     <TextView
         android:id="@+id/lastNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Last Name" />
+        android:text="@string/last_name"
+        android:labelFor="@+id/lastNameEditText"
+        android:layout_below="@+id/firstNameEditText"/>
 
     <EditText
         android:id="@+id/lastNameEditText"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:layout_toEndOf="@+id/lastNameTextView"
+        android:layout_below="@+id/firstNameEditText"/>
 
     <TextView
         android:id="@+id/emailTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email" />
+        android:text="@string/email"
+        android:labelFor="@+id/emailEditText"
+        android:layout_toStartOf="@+id/lastNameEditText"
+        android:layout_below="@+id/lastNameEditText"/>
 
     <EditText
         android:id="@+id/emailEditText"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:layout_toEndOf="@+id/emailTextView"
+        android:layout_below="@+id/lastNameEditText"/>
 
     <Button
         android:id="@+id/connectButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CONNECT!" />
+        android:text="@string/connect"
+        android:layout_below="@+id/emailEditText"
+        android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>
