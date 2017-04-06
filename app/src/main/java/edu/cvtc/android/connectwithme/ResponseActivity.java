@@ -23,6 +23,28 @@ public class ResponseActivity extends Activity{
 
         final TextView responseTextView = (TextView) findViewById(R.id.responseTextView);
 
+        final Bundle bundle = getIntent().getExtras();
+
+        if (null == bundle) {
+            responseTextView.setText("Error: Bundle was null!");
+        } else {
+            final String firstName = bundle.getString("firstName");
+            final String lastName = bundle.getString("lastName");
+            final String email = bundle.getString("email");
+
+            if (null == firstName || firstName.isEmpty()
+                    || null == lastName || lastName.isEmpty()
+                    || null == email || email.isEmpty()) {
+                responseTextView.setText("Error: Missing information!");
+            } else {
+
+                responseTextView.setText("Hello " + firstName + " " + lastName + "! Thank you for " +
+                        "connecting with me! You can expect an email from me soon at " + email + ".");
+
+            }
+
+        }
+
     }
 
 }
