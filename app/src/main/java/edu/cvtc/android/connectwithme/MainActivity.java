@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else {
 
             Toast.makeText(getApplicationContext(), "You must complete all fields...", Toast.LENGTH_SHORT).show();
-            
+
         }
 
     }
